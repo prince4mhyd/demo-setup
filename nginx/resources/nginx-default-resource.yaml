@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-default
+spec:
+  selector:
+    matchLabels:
+      run: nginx-default
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        run: nginx-default
+    spec:
+      containers:
+      - name: nginx-default
+        image: containerregistry.azurecr.io/nginx:default
+        ports:
+        - containerPort: 80
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-default
+  labels:
+    run: nginx-default
+  annotations:
+      service.beta.kubernetes.io/azure-load-balancer-internal: "true"
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+  selector:
+    run: nginx-default
+  type: LoadBalancer

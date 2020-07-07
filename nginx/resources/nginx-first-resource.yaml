@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-first
+spec:
+  selector:
+    matchLabels:
+      run: nginx-first
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        run: nginx-first
+    spec:
+      containers:
+      - name: nginx-first
+        image: containerregistry.azurecr.io/nginx:first
+        ports:
+        - containerPort: 80
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-first
+  labels:
+    run: nginx-first
+  annotations:
+      service.beta.kubernetes.io/azure-load-balancer-internal: "true"
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+  selector:
+    run: nginx-first
+  type: LoadBalancer

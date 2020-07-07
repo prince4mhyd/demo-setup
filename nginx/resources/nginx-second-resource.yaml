@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-second
+spec:
+  selector:
+    matchLabels:
+      run: nginx-second
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        run: nginx-second
+    spec:
+      containers:
+      - name: nginx-second
+        image: containerregistry.azurecr.io/nginx:second
+        ports:
+        - containerPort: 80
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-second
+  labels:
+    run: nginx-second
+  annotations:
+      service.beta.kubernetes.io/azure-load-balancer-internal: "true"
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+  selector:
+    run: nginx-second
+  type: LoadBalancer
