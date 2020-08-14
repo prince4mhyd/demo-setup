@@ -1,0 +1,3 @@
+2020-08-15 01:54:20.9976||INFO|CytelDBDeployment.DBDeployment|Application Started at 08/14/2020 20:24:20 
+2020-08-15 01:55:11.6675||ERROR|CytelDBDeployment.DBDeployment|Error While Checking Database Exception while connecting 
+2020-08-15 01:56:18.7758||ERROR|CytelDBDeployment.DBDeployment|Error While Creating Database Exception while connecting 
