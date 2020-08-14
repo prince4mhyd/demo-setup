@@ -1,0 +1,10 @@
+D:\Cytel\TestSolaraJMPBox\TestSolaraJMPBox\bin\Debug\netcoreapp3.1\TestSolaraJMPBox.exe
+D:\Cytel\TestSolaraJMPBox\TestSolaraJMPBox\bin\Debug\netcoreapp3.1\TestSolaraJMPBox.deps.json
+D:\Cytel\TestSolaraJMPBox\TestSolaraJMPBox\bin\Debug\netcoreapp3.1\TestSolaraJMPBox.runtimeconfig.json
+D:\Cytel\TestSolaraJMPBox\TestSolaraJMPBox\bin\Debug\netcoreapp3.1\TestSolaraJMPBox.runtimeconfig.dev.json
+D:\Cytel\TestSolaraJMPBox\TestSolaraJMPBox\bin\Debug\netcoreapp3.1\TestSolaraJMPBox.dll
+D:\Cytel\TestSolaraJMPBox\TestSolaraJMPBox\bin\Debug\netcoreapp3.1\TestSolaraJMPBox.pdb
+D:\Cytel\TestSolaraJMPBox\TestSolaraJMPBox\obj\Debug\netcoreapp3.1\TestSolaraJMPBox.AssemblyInfoInputs.cache
+D:\Cytel\TestSolaraJMPBox\TestSolaraJMPBox\obj\Debug\netcoreapp3.1\TestSolaraJMPBox.AssemblyInfo.cs
+D:\Cytel\TestSolaraJMPBox\TestSolaraJMPBox\obj\Debug\netcoreapp3.1\TestSolaraJMPBox.dll
+D:\Cytel\TestSolaraJMPBox\TestSolaraJMPBox\obj\Debug\netcoreapp3.1\TestSolaraJMPBox.pdb
